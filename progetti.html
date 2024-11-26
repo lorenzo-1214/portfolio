@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il mio Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    <!-- mycss -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container-fluid">
+            <!-- Logo a sinistra -->
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo_LR-removebg-preview.png" alt="Logo" width="150px" class="logo ms-5 mt-4">
+            </a>
+            <!-- Links centrati -->
+            <div class="collapse navbar-collapse d-flex justify-content-center me-5" id="navbarNav">
+                <ul class="navbar-nav mt-1">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Icone social a destra -->
+            <div class="navbar-nav ms-auto me-5 mt-2">
+                <a class="nav-link" href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram me-1"></i>
+                </a>
+                <a class="nav-link" href="https://www.linkedin.com/" target="_blank">
+                    <i class="fab fa-linkedin-in me-1"></i>
+                </a>
+                <a class="nav-link" href="https://github.com/" target="_blank">
+                    <i class="fab fa-github me-1"></i>
+                </a>
+            </div>
+        </div>
+    </nav>  
+    
+    <!-- Video di sfondo -->
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="./img/coverr-walking-to-the-mountain-top-8360-1080p.mp4" type="video/mp4">
+            <!-- Se non funziona mp4, puoi provare altri formati come ogg -->
+        </video>
+    </div>
+    <div >
+        <h1 class="text-center me-2 mt-5 text-light">I Miei Progetti</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row ">
+            <divo class="col-12 d-flex justify-content-center">
+                
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <!-- Prima card -->
+                        <div class="card">
+                            <h2>Blanco Grill</h2>
+                            <img src="./img/screen_Blanco.png" class="imgBlanco" alt="">
+                           <p>Blanco Grill è un sito web realizzato per un ristorante, progettato per essere moderno, responsive e facilmente navigabile. Il design è pulito, con immagini di alta qualità per mostrare l'atmosfera e i piatti del ristorante. La mia attenzione è stata rivolta alla facilità d'uso, ottimizzando l'esperienza utente su dispositivi desktop e mobile.</p>
+                            <a class="nav-link linkCard" href="https://blancogrillresturant.netlify.app" target="_blank">
+                                <i class="fa-solid fa-utensils"></i>
+                            </a>
+                        </div>
+                        
+                        <!-- Seconda card -->
+                        <div class="card">
+                            <h2>Le mie competenze</h2>
+                            <p>HTML, CSS, JavaScript, PHP, MySQL</p>
+                            <p>
+                                Ho una vasta esperienza nello sviluppo di applicazioni web e siti interattivi, con un focus particolare su performance e user experience. Sono abile nell'uso di frameworks come React, Vue.js e Tailwind CSS, ma anche nel backend con Node.js e Express.
+                            </p>
+                            <a class="nav-link linkCard" href="https://github.com/" target="_blank">
+                                <i class="fab fa-github me-1"></i>
+                            </a>
+                        </div>
+                        
+                        <!-- Terza card -->
+                        <div class="card">
+                            <h2>Perché scegliere me</h2>
+                            <p>Dedizione e Caparbietà</p>
+                            <p>
+                                Sono una persona che non si arrende facilmente di fronte alle sfide. Lavoro bene sia in team che autonomamente, gestendo progetti con un approccio agile e preciso. Se cerchi un Web Developer motivato, creativo e sempre pronto a imparare, sarei entusiasta di collaborare con te.
+                            </p>
+                            <a class="nav-link linkCard" href="progetti.html">
+                                <i class="fas fa-award"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                <script src="scroll.js"></script> <!-- Questo file contiene il codice JS per l'effetto hover sull'immagine -->
+            </body>
+            </html>
+            

@@ -1,0 +1,152 @@
+
+/* Aggiungiamo lo stile per il video di sfondo */
+.video-background {
+    position: fixed; /* Rende il video fisso in background */
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    z-index: -1; /* Assicura che il video sia dietro il contenuto */
+    background: rgba(0, 0, 0, 0.819); /* Sfondo semi-trasparente in caso di problemi di transizione */
+    transform: translate(-50%, -50%);  /* Centra il video */
+}
+.video-background {
+    filter: brightness(20%) contrast(100%) saturate(100%);
+}
+
+
+
+/* Navbar trasparente, senza sfondo */
+.navbar {
+    height: 100px;
+    background-color: transparent !important; /* Background trasparente */
+}
+
+/* Colore bianco per i link */
+.navbar .navbar-nav .nav-link {
+    font-size: 25px;
+    color: #f1f1f1bb !important;  /* Colore bianco per i link */
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: white !important; /* Colore più chiaro al passaggio del mouse */
+}
+
+/* card */
+.card {
+    flex: 1 1 300px; /* Permette a tutte le card di avere la stessa larghezza e altezza */
+    margin: 40px;
+    width: 300px;
+    background: linear-gradient(135deg, #31313284, #27312f);
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Animazione di entrata per la card */
+.card {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s forwards;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra di base */
+
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* button proggetto gitHub */
+.linkCard{
+    margin-top: auto; /* Spinge il link in basso, indipendentemente dall'altezza */
+    font-size: 45px;
+    color: #f1f1f1bb !important;  /* Colore bianco per i link */
+    
+}
+
+.linkCard:hover {
+    transform: scale(1.10);
+    transition: calc(0.8s);
+    color: white !important; /* Colore più chiaro al passaggio del mouse */
+}
+
+
+
+/* button proggetto gitHub */
+.btn-progetti{
+    text-decoration: none;
+    margin-top: auto; /* Spinge il link in basso, indipendentemente dall'altezza */
+    font-size: 45px;
+    color: #f1f1f1bb !important;  /* Colore bianco per i link */
+    
+}
+
+.btn-progetti:hover {
+    transform: scale(1.10);
+    transition: calc(0.8s);
+    color: white !important; /* Colore più chiaro al passaggio del mouse */
+}
+
+
+
+/* button proggetto gitHub */
+.medaglia{
+    margin-top: auto; /* Spinge il link in basso, indipendentemente dall'altezza */
+    font-size: 45px;
+    color: #f1f1f1bb !important;  /* Colore bianco per i link */
+    
+}
+
+.medaglia:hover {
+    transform: scale(1.10);
+    transition: calc(0.8s);
+    color: white !important; /* Colore più chiaro al passaggio del mouse */
+}
+
+
+
+
+
+/* button proggetto gitHub */
+.btn-to-progetti{
+    margin-top: auto; /* Spinge il link in basso, indipendentemente dall'altezza */
+    font-size: 45px;
+    color: #f1f1f1bb !important;  /* Colore bianco per i link */
+    
+}
+
+.btn-to-progetti:hover {
+    transform: scale(1.10);
+    transition: calc(0.8s);
+    color: white !important; /* Colore più chiaro al passaggio del mouse */
+}
+
+
+/* Immagine della card */
+.card .imgBlanco {
+    width: 100%; /* Fa in modo che l'immagine occupi tutta la larghezza della card */
+    height: 200px; /* Impostiamo un'altezza fissa per l'immagine (puoi cambiarla) */
+    object-fit: cover; /* L'immagine si adatterà, coprendo l'area senza distorsioni */
+    border-radius: 10px; /* Bordo arrotondato per l'immagine */
+    margin-bottom: 15px; /* Distanza tra l'immagine e il testo */
+}
