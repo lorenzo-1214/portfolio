@@ -18,7 +18,7 @@
 
 /* Navbar trasparente, senza sfondo */
 .navbar {
-    height: 100px;
+    height: 90px;
     background-color: transparent !important; /* Background trasparente */
 }
 
@@ -150,3 +150,14 @@
     border-radius: 10px; /* Bordo arrotondato per l'immagine */
     margin-bottom: 15px; /* Distanza tra l'immagine e il testo */
 }
+
+.pCard{
+    font-weight: bold;
+}
+
+
+/* bordo icone competenza */
+.bord{
+    border-radius: 10%;
+}
+

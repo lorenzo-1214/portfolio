@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il mio Portfolio</title>
+    <!-- favicon -->
+    <link rel="icon" href="./img/logo_LR-removebg-preview.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
@@ -19,20 +21,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
         <div class="container-fluid">
             <!-- Logo a sinistra -->
-            <a class="navbar-brand" href="#">
-                <img src="./img/logo_LR-removebg-preview.png" alt="Logo" width="150px" class="logo ms-5 mt-4">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/logo_LR-removebg-preview.png" alt="Logo" width="150px" class="logo ms-2 mt-4">
             </a>
-            <!-- Links centrati -->
-            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
-                <ul class="navbar-nav mt-1">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="progetti.html">Progetti</a>
-                    </li>
-                </ul>
-            </div>
             <!-- Icone social a destra -->
             <div class="navbar-nav ms-auto me-5 mt-2">
                 <a class="nav-link" href="https://www.instagram.com/" target="_blank">
@@ -55,8 +46,25 @@
             <!-- Se non funziona mp4, puoi provare altri formati come ogg -->
         </video>
     </div>
-   
-   
+    
+    
+    
+    <!-- link con documentazione per ogni linguaggio o framework -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-3 d-flex justify-content-between">
+                <a href=""><img src="./img/svg_html5.png" class="mt-3" width="80px" alt=""></a> 
+                <a href=""><img src="./img/svg_css2-removebg-preview.png" class="mt-3" width="80px" alt=""></a> 
+                <a href=""><img src="./img/svg_javascript.png" class="mt-3 bord" width="80px" alt=""></a> 
+                <a href=""><img src="./img/php__iconQuadrata-removebg-preview.png" class="mt-3" width="80px" alt=""></a> 
+                <a href=""><img src="./img/laravelì_quadrata.png" class="mt-3 bord" width="80px" alt=""></a> 
+                <a href=""><img src="./img/node___js-removebg-preview.png" class="mt-2" width="99px" alt=""></a> 
+                <a href=""><img src="./img/mySQL___.jpg" class="mt-3 bord" width="80px" alt=""></a> 
+            </div>
+        </div>
+    </div>
+    
+    
     <div class="container-fluid">
         <div class="row ">
             <divo class="col-12 d-flex justify-content-center">
@@ -64,8 +72,9 @@
                 <div class="card">
                     <h2>Lorenzo Rotunno</h2>
                     <p>Web Developer</p>
-                    <p>Ciao, sono Lorenzo, un Web Developer appassionato di creazione di esperienze digitali uniche. Con una solida formazione nelle tecnologie HTML, CSS, JavaScript, e React, mi piace costruire siti web moderni, dinamici e responsivi. La mia missione è rendere il web più accessibile e coinvolgente per gli utenti di tutto il mondo.</p>
+                    <p>Ciao, sono Lorenzo, Sono un Web Developer appassionato nella creazione di esperienze digitali coinvolgenti e innovative. Con una solida preparazione in HTML, CSS, JavaScript e React, mi dedico a costruire siti web moderni, dinamici e perfettamente responsivi. Il mio obiettivo è rendere il web più accessibile, intuitivo e stimolante per gli utenti di tutto il mondo.</p>
                     <a class="nav-link linkCard" href="https://www.linkedin.com/" target="_blank">
+                        <p class="pCard"> Visualizza la mia pagina Linkedin</p>
                         <i class="fab fa-linkedin-in me-1 mt-4 "></i>
                     </a>    
                     
@@ -73,36 +82,40 @@
                 
                 <div class="card">
                     <h2>Le mie competenze</h2>
-                    <p>HTML, CSS, JavaScript, PHP , mySQL</p>
-                    <p>Ho una vasta esperienza nello sviluppo di applicazioni web e siti interattivi, con un focus particolare su performance e user experience. Sono abile nell'uso di frameworks come React, Vue.js e Tailwind CSS, ma anche nel backend con Node.js e Express. Adoro affrontare nuove sfide e cerco sempre di migliorarmi, imparando nuove tecnologie e metodi per ottimizzare i miei progetti.</p>
-                    <a class="nav-link linkCard" href="https://github.com/" target="_blank">                
-                        <i class="gitPrg fab fa-github me-1 "></i>
-                    </a>
+                    <p>HTML, CSS, JavaScript, PHP , mySQL e Laravel , NodeJS</p>
+                    <p>Sono uno sviluppatore web con una solida conoscenza di HTML, CSS, JavaScript, PHP, MySQL e Laravel. Al momento sto approfondendo anche l'ecosistema Node.js.
+                        Ho esperienza nello sviluppo di applicazioni web interattive e siti moderni, con un focus particolare sulla performance e sull’user experience.</p>
+                        <a class="nav-link linkCard" href="https://github.com/" target="_blank">                
+                            <p class="pCard"> Visualizza la mia pagina GitHub</p>
+                            <i class="gitPrg fab fa-github me-1 "></i>
+                        </a>
+                    </div>
+                    
+                    
+                    <div class="card">
+                        <h2>Perché scegliere me</h2>
+                        <p>Passione e Determinazione</p>
+                        <p>Sono una persona motivata, appassionata e determinata, sempre pronta ad affrontare le sfide con creatività, precisione e spirito di innovazione. Lavoro bene sia in team che in autonomia, mantenendo un approccio proattivo, flessibile e orientato ai risultati. Se cerchi un Web Developer entusiasta, con un forte desiderio di crescere e contribuire al successo del tuo progetto, sarò felice di collaborare con te.</p>
+                        <a class="nav-link linkCard" href="progetti.html">
+                            <p class="pCard"> Visualizza i miei Progetti</p>
+                            <i class="medaglia fas fa-award"></i>
+                        </a>
+                        </div>
+                        
+                    </divo>
                 </div>
-                
-                
-                <div class="card">
-                    <h2>Perché scegliere me</h2>
-                    <p>Dedizione e Caparbietà</p>
-                    <p>Sono una persona che non si arrende facilmente di fronte alle sfide. La mia passione per il coding e per la creazione di esperienze web uniche mi spinge sempre a migliorarmi. Lavoro bene sia in team che autonomamente, gestendo progetti con un approccio agile e preciso. Se cerchi un Web Developer motivato, creativo e sempre pronto a imparare, sarei entusiasta di collaborare con te.</p>
-                    <a class="nav-link linkCard" href="progetti.html">
-                        <i class="medaglia fas fa-award"></i>
-                    </a>
-                </div>
-                
-            </divo>
-        </div>
-    </div>
-    
-    
-    <div class="text-center mt-4">
-        <a href="progetti.html" class="btn-to-progetti">
-            <i class="fas fa-arrow-right me-2"></i>
-        </a>
-    </div>
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="scroll.js"></script> <!-- Questo file contiene il codice JS per l'effetto hover sull'immagine -->
-</body>
-</html>
+            </div>
+            
+            
+            <div class="d-flex justify-content-center">
+                <a href="progetti.html" class="btn-to-progetti">
+                    <i class="fas fa-arrow-right me-2"></i>
+                </a>
+            </div>
+            
+            
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="scroll.js"></script> <!-- Questo file contiene il codice JS per l'effetto hover sull'immagine -->
+        </body>
+        </html>
+        
