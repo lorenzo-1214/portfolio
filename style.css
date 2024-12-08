@@ -1,163 +1,207 @@
-
 /* Aggiungiamo lo stile per il video di sfondo */
 .video-background {
-    position: fixed; /* Rende il video fisso in background */
-    top: 0;
-    left: 0;
-    width: 10%;
-    height: 10%;
-    z-index: -1; /* Assicura che il video sia dietro il contenuto */
-    background: rgba(0, 0, 0, 0.819); /* Sfondo semi-trasparente in caso di problemi di transizione */
-    transform: translate(-50%, -50%);  /* Centra il video */
+  position: fixed; /* Rende il video fisso in background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Assicura che il video sia dietro il contenuto */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.819
+  ); /* Sfondo semi-trasparente in caso di problemi di transizione */
+  filter: brightness(20%) contrast(100%) saturate(100%);
 }
-.video-background {
-    filter: brightness(20%) contrast(100%) saturate(100%);
-}
-
-
 
 /* Navbar trasparente, senza sfondo */
 .navbar {
-    height: 90px;
-    background-color: transparent !important; /* Background trasparente */
+  height: 90px;
+  background-color: transparent !important; /* Background trasparente */
+  padding: 0; /* Rimuove padding extra */
+  margin-bottom: 0; /* Elimina margini sotto la navbar */
 }
 
 /* Colore bianco per i link */
 .navbar .navbar-nav .nav-link {
-    font-size: 25px;
-    color: #f1f1f1bb !important;  /* Colore bianco per i link */
+  font-size: 25px;
+  color: #f1f1f1bb !important; /* Colore bianco per i link */
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: white !important; /* Colore più chiaro al passaggio del mouse */
+  color: white !important; /* Colore più chiaro al passaggio del mouse */
 }
 
 /* card */
 .card {
-    flex: 1 1 300px; /* Permette a tutte le card di avere la stessa larghezza e altezza */
-    margin: 40px;
-    width: 300px;
-    background: linear-gradient(135deg, #31313284, #27312f);
-    border-radius: 15px;
-    color: white;
-    padding: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
+  flex: 1 1 300px; /* Permette a tutte le card di avere la stessa larghezza e altezza */
+  margin: 40px;
+  width: 300px;
+  background: linear-gradient(135deg, #31313284, #27312f);
+  border-radius: 15px;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px; /* Aggiunta una separazione tra le card */
 }
 
 .card h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
 .card p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* Animazione di entrata per la card */
 .card {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeIn 1s forwards;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra di base */
-
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 1s forwards;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra di base */
 }
 
 @keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-
-
-/* button proggetto gitHub */
-.linkCard{
-    margin-top: auto; /* Spinge il link in basso, indipendentemente dall'altezza */
-    font-size: 45px;
-    color: #f1f1f1bb !important;  /* Colore bianco per i link */
-    
+/* Style per i link della card */
+.linkCard,
+.btn-progetti,
+.medaglia,
+.btn-to-progetti {
+  margin-top: auto; /* Spinge il link in basso, indipendentemente dall'altezza */
+  font-size: 45px;
+  color: #f1f1f1bb !important; /* Colore bianco per i link */
 }
 
-.linkCard:hover {
-    transform: scale(1.10);
-    transition: calc(0.8s);
-    color: white !important; /* Colore più chiaro al passaggio del mouse */
-}
-
-
-
-/* button proggetto gitHub */
-.btn-progetti{
-    text-decoration: none;
-    margin-top: auto; /* Spinge il link in basso, indipendentemente dall'altezza */
-    font-size: 45px;
-    color: #f1f1f1bb !important;  /* Colore bianco per i link */
-    
-}
-
-.btn-progetti:hover {
-    transform: scale(1.10);
-    transition: calc(0.8s);
-    color: white !important; /* Colore più chiaro al passaggio del mouse */
-}
-
-
-
-/* button proggetto gitHub */
-.medaglia{
-    margin-top: auto; /* Spinge il link in basso, indipendentemente dall'altezza */
-    font-size: 45px;
-    color: #f1f1f1bb !important;  /* Colore bianco per i link */
-    
-}
-
-.medaglia:hover {
-    transform: scale(1.10);
-    transition: calc(0.8s);
-    color: white !important; /* Colore più chiaro al passaggio del mouse */
-}
-
-
-
-
-
-/* button proggetto gitHub */
-.btn-to-progetti{
-    margin-top: auto; /* Spinge il link in basso, indipendentemente dall'altezza */
-    font-size: 45px;
-    color: #f1f1f1bb !important;  /* Colore bianco per i link */
-    
-}
-
+.linkCard:hover,
+.btn-progetti:hover,
+.medaglia:hover,
 .btn-to-progetti:hover {
-    transform: scale(1.10);
-    transition: calc(0.8s);
-    color: white !important; /* Colore più chiaro al passaggio del mouse */
+  transform: scale(1.1);
+  transition: calc(0.8s);
+  color: white !important; /* Colore più chiaro al passaggio del mouse */
 }
-
 
 /* Immagine della card */
 .card .imgBlanco {
-    width: 100%; /* Fa in modo che l'immagine occupi tutta la larghezza della card */
-    height: 200px; /* Impostiamo un'altezza fissa per l'immagine (puoi cambiarla) */
-    object-fit: cover; /* L'immagine si adatterà, coprendo l'area senza distorsioni */
-    border-radius: 10px; /* Bordo arrotondato per l'immagine */
-    margin-bottom: 15px; /* Distanza tra l'immagine e il testo */
+  width: 100%; /* Fa in modo che l'immagine occupi tutta la larghezza della card */
+  height: 200px; /* Impostiamo un'altezza fissa per l'immagine (puoi cambiarla) */
+  object-fit: cover; /* L'immagine si adatterà, coprendo l'area senza distorsioni */
+  border-radius: 10px; /* Bordo arrotondato per l'immagine */
+  margin-bottom: 15px; /* Distanza tra l'immagine e il testo */
 }
 
-.pCard{
-    font-weight: bold;
+.pCard {
+  font-weight: bold;
 }
-
 
 /* bordo icone competenza */
-.bord{
-    border-radius: 10%;
+.bord {
+  border-radius: 10%;
 }
 
+/* Media Queries per schermi piccoli */
+
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar-nav .nav-link {
+    font-size: 20px;
+    height: 10;
+  }
+  .link-img {
+    margin-top: 50px;
+  }
+  /* Card */
+  .card {
+    margin: 20px;
+    width: 90%; /* Le card occupano quasi tutta la larghezza dello schermo */
+  }
+
+  /* Card Heading */
+  .card h2 {
+    font-size: 24px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  /* Bottoni */
+  .linkCard,
+  .btn-progetti,
+  .medaglia,
+  .btn-to-progetti {
+    font-size: 36px;
+  }
+
+  /* Video di sfondo */
+  .video-background {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Media Queries per schermi molto piccoli (smartphone) */
+@media (max-width: 480px) {
+  .navbar .navbar-nav .nav-link {
+    font-size: 18px;
+  }
+
+  /* Card */
+  .card {
+    margin: 10px;
+    width: 100%; /* Le card occupano tutta la larghezza dello schermo */
+  }
+
+  /* Card Heading */
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  /* Bottoni */
+  .linkCard,
+  .btn-progetti,
+  .medaglia,
+  .btn-to-progetti {
+    font-size: 30px;
+  }
+
+  /* Video di sfondo */
+  .video-background {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Rimuovere lo spazio vuoto in fondo */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* Evita lo scroll laterale */
+}
+
+.container-fluid {
+  padding-bottom: 0; /* Rimuove il padding in basso */
+}
+
+.container {
+  padding-bottom: 0; /* Rimuove il padding in basso */
+}
