@@ -1,4 +1,4 @@
-/* Aggiungiamo lo stile per il video di sfondo */
+/* Stile per il video di sfondo */
 .video-background {
   position: fixed; /* Rende il video fisso in background */
   top: 0;
@@ -6,16 +6,11 @@
   width: 100%;
   height: 100%;
   z-index: -1; /* Assicura che il video sia dietro il contenuto */
-  background: rgba(
-    0,
-    0,
-    0,
-    0.819
-  ); /* Sfondo semi-trasparente in caso di problemi di transizione */
+  background: rgba(0, 0, 0, 0.819); /* Sfondo semi-trasparente in caso di problemi di transizione */
   filter: brightness(20%) contrast(100%) saturate(100%);
 }
 
-/* Navbar trasparente, senza sfondo */
+/* Stile per la navbar */
 .navbar {
   height: 90px;
   background-color: transparent !important; /* Background trasparente */
@@ -23,7 +18,6 @@
   margin-bottom: 0; /* Elimina margini sotto la navbar */
 }
 
-/* Colore bianco per i link */
 .navbar .navbar-nav .nav-link {
   font-size: 25px;
   color: #f1f1f1bb !important; /* Colore bianco per i link */
@@ -33,7 +27,30 @@
   color: white !important; /* Colore più chiaro al passaggio del mouse */
 }
 
-/* card */
+/* Stile per la sezione immagini */
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colonne */
+  gap: 20px; /* Spaziatura tra le immagini */
+  justify-items: center; /* Centra le immagini orizzontalmente */
+  align-items: center; /* Centra le immagini verticalmente */
+}
+
+.grid-layout a img {
+  width: 80px; /* Dimensione standard per le immagini */
+  height: auto; /* Mantiene le proporzioni */
+  transition: transform 0.3s ease; /* Animazione al passaggio del mouse */
+}
+
+.grid-layout a img:hover {
+  transform: scale(1.1); /* Effetto di zoom */
+}
+
+.icon{
+  font-size: 30px;
+}
+
+/* Stile per le card */
 .card {
   flex: 1 1 300px; /* Permette a tutte le card di avere la stessa larghezza e altezza */
   margin: 40px;
@@ -59,149 +76,103 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* Animazione di entrata per la card */
-.card {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeIn 1s forwards;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra di base */
+/* Effetto al passaggio del mouse per le card */
+.card:hover {
+  transform: translateY(-10px);
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.freccia{
+  color: whitesmoke;
+  font-size: 30px;
+  margin-top: 10px;
 }
 
-/* Style per i link della card */
-.linkCard,
-.btn-progetti,
-.medaglia,
-.btn-to-progetti {
-  margin-top: auto; /* Spinge il link in basso, indipendentemente dall'altezza */
-  font-size: 45px;
-  color: #f1f1f1bb !important; /* Colore bianco per i link */
-}
-
-.linkCard:hover,
-.btn-progetti:hover,
-.medaglia:hover,
-.btn-to-progetti:hover {
-  transform: scale(1.1);
-  transition: calc(0.8s);
-  color: white !important; /* Colore più chiaro al passaggio del mouse */
-}
-
-/* Immagine della card */
-.card .imgBlanco {
-  width: 100%; /* Fa in modo che l'immagine occupi tutta la larghezza della card */
-  height: 200px; /* Impostiamo un'altezza fissa per l'immagine (puoi cambiarla) */
-  object-fit: cover; /* L'immagine si adatterà, coprendo l'area senza distorsioni */
-  border-radius: 10px; /* Bordo arrotondato per l'immagine */
-  margin-bottom: 15px; /* Distanza tra l'immagine e il testo */
-}
-
-.pCard {
-  font-weight: bold;
-}
-
-/* bordo icone competenza */
 .bord {
-  border-radius: 10%;
+  border-radius: 15px;
 }
 
 /* Media Queries per schermi piccoli */
-
 @media (max-width: 768px) {
   /* Navbar */
+  .navbar {
+    height: auto; /* Adatta l'altezza */
+    padding: 10px; /* Aggiunge un po' di spazio */
+  }
+
+  .navbar-brand {
+    margin-left: 0; /* Rimuove il margine sinistro */
+    text-align: center; /* Centra il logo */
+  }
+
+  .navbar-brand img {
+    width: 120px; /* Riduce la dimensione del logo per dispositivi piccoli */
+    margin-top: 0;
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: center; /* Centra le icone */
+    gap: 10px; /* Spaziatura tra le icone */
+    flex-wrap: wrap; /* Permette il wrapping su più righe */
+  }
+
   .navbar-nav .nav-link {
-    font-size: 20px;
-    height: 10;
+    font-size: 18px; /* Riduce la dimensione del testo */
+    padding: 5px;
   }
-  .link-img {
-    margin-top: 50px;
+
+  .navbar-nav .nav-link i {
+    font-size: 20px; /* Riduce le dimensioni delle icone */
   }
+
+  /* Griglia immagini */
+  .grid-layout {
+    grid-template-columns: repeat(2, 1fr); /* Passa a 3 colonne */
+  }
+
   /* Card */
   .card {
     margin: 20px;
     width: 90%; /* Le card occupano quasi tutta la larghezza dello schermo */
   }
-
-  /* Card Heading */
-  .card h2 {
-    font-size: 24px;
-  }
-
-  .card p {
-    font-size: 14px;
-  }
-
-  /* Bottoni */
-  .linkCard,
-  .btn-progetti,
-  .medaglia,
-  .btn-to-progetti {
-    font-size: 36px;
-  }
-
-  /* Video di sfondo */
-  .video-background {
-    width: 100%;
-    height: auto;
-  }
 }
 
-/* Media Queries per schermi molto piccoli (smartphone) */
+/* Media Queries per schermi molto piccoli */
 @media (max-width: 480px) {
-  .navbar .navbar-nav .nav-link {
-    font-size: 18px;
+  .card-container {
+    flex-direction: column; /* Cambia il layout in una colonna verticale */
+    gap: 10px; /* Riduce la spaziatura tra le card */
   }
 
-  /* Card */
   .card {
-    margin: 10px;
-    width: 100%; /* Le card occupano tutta la larghezza dello schermo */
+    width: 90%; /* Le card occupano il 90% della larghezza dello schermo */
+    max-width: none; /* Rimuove il limite massimo */
+    margin: 10px auto; /* Centra le card verticalmente */
   }
 
-  /* Card Heading */
-  .card h2 {
-    font-size: 20px;
+  /* Nasconde l'h2, il paragrafo e il contenuto extra */
+  .card h2,
+  .card p,
+  .card img,
+  .card .otherContent {
+    display: none; /* Nasconde tutti gli altri contenuti */
   }
 
-  .card p {
-    font-size: 12px;
-  }
-
-  /* Bottoni */
-  .linkCard,
-  .btn-progetti,
-  .medaglia,
-  .btn-to-progetti {
-    font-size: 30px;
-  }
-
-  /* Video di sfondo */
-  .video-background {
-    width: 100%;
-    height: auto;
+  .card a {
+    display: inline-flex; /* Metti i bottoni sulla stessa riga */
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    margin-top: 5px;
+    font-size: 50px;
   }
 }
 
-/* Rimuovere lo spazio vuoto in fondo */
+/* Corpo della pagina */
 body,
 html {
   margin: 0;
   padding: 0;
   height: 100%;
   overflow-x: hidden; /* Evita lo scroll laterale */
-}
-
-.container-fluid {
-  padding-bottom: 0; /* Rimuove il padding in basso */
-}
-
-.container {
-  padding-bottom: 0; /* Rimuove il padding in basso */
 }
