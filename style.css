@@ -176,3 +176,47 @@ html {
   height: 100%;
   overflow-x: hidden; /* Evita lo scroll laterale */
 }
+
+
+
+/* Stile per le card */
+.portfolio-card {
+  flex: 1 1 300px; /* Permette alle card di avere la stessa larghezza */
+  margin: 40px;
+  width: 300px; /* Impostiamo una larghezza fissa */
+  background: linear-gradient(135deg, #31313284, #27312f);
+  border-radius: 15px;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px; /* Aggiunge una separazione tra le card */
+}
+
+/* Assicurati che le immagini siano ben dimensionate */
+.portfolio-card img {
+  width: 100%; /* La larghezza dell'immagine si adatta alla larghezza della card */
+  height: auto;
+  margin-top: 15px; /* Spazio tra il titolo e l'immagine */
+}
+
+/* Effetto hover per la card */
+.portfolio-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Media Queries per schermi piccoli */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Le card vanno su più righe se necessario */
+  }
+
+  .portfolio-card {
+    width: 100%; /* Le card occupano tutta la larghezza dello schermo sui dispositivi piccoli */
+    max-width: 350px; /* Imposta una larghezza massima per le card */
+    margin: 10px; /* Riduce la spaziatura tra le card */
+  }
+}

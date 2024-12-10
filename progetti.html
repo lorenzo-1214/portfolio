@@ -15,36 +15,59 @@
 <body>
     
     
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-        <div class="container-fluid">
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+          <div class="container-fluid">
             <!-- Logo a sinistra -->
-            <a class="navbar-brand" href="#">
-                <img src="./img/logo_LR-removebg-preview.png" alt="Logo" width="150px" class="logo ms-5 mt-4">
+            <a class="navbar-brand" href="./index.html">
+              <img
+                src="./img/logo_LR-removebg-preview.png"
+                alt="Logo"
+                width="150px"
+                class="logo mt-4"
+              />
             </a>
-            <!-- Links centrati -->
-            <div class="collapse navbar-collapse d-flex justify-content-center me-5" id="navbarNav">
-                <ul class="navbar-nav mt-1">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./index.html">Home</a>
-                    </li>
-                </ul>
-            </div>
+  
+            <!-- Bottone Toggle -->
+            <button
+              class="navbar-toggler mt-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
             <!-- Icone social a destra -->
-            <div class="navbar-nav ms-auto me-5 mt-2">
-                <a class="nav-link" href="https://www.instagram.com/" target="_blank">
-                    <i class="fab fa-instagram me-1"></i>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="navbar-nav ms-auto">
+                <a
+                  class="nav-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram me-1"></i>
                 </a>
-                <a class="nav-link" href="https://www.linkedin.com/" target="_blank">
-                    <i class="fab fa-linkedin-in me-1"></i>
+                <a
+                  class="nav-link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin-in me-1"></i>
                 </a>
                 <a class="nav-link" href="https://github.com/" target="_blank">
-                    <i class="fab fa-github me-1"></i>
+                  <i class="fab fa-github me-1"></i>
                 </a>
+              </div>
             </div>
-        </div>
-    </nav>  
-    
+          </div>
+        </nav>
+      </div>
+   
     <!-- Video di sfondo -->
     <div class="video-background">
         <video autoplay loop muted>
@@ -57,52 +80,56 @@
     
     
     <!-- h1 e sezione card -->
-    <div >
-        <h2 class="text-center me-2 mt-4 text-light">I Miei Progetti</h2>
-    </div>
+    <div class="text-center text-light mt-4"><h1>I Miei Progetti</h1></div>
+    <div class="text-center text-light mt-0"><p>"Per ora Sono Uguali , Sto Lavorando per gli altri"</p></div>
     
+ 
     <!-- card -->
     
-    
-    <div class="container-fluid">
-        <div class="row ">
-            <divo class="col-12 d-flex justify-content-center">
-                
-                <div class="container-fluid">
-                    <div class="row justify-content-center">
-                        <!-- Prima card -->
-                        <div class="card">
-                            <h2>Blanco Grill</h2>
-                            <img src="./img/screen_Blanco.png" class="imgBlanco" alt="">
-                            <p>Blanco Grill è un sito web realizzato per un ristorante, progettato per essere moderno, responsive e facilmente navigabile. Il design è pulito, con immagini di alta qualità per mostrare l'atmosfera e i piatti del ristorante. La mia attenzione è stata rivolta alla facilità d'uso, ottimizzando l'esperienza utente su dispositivi desktop e mobile.</p>
-                            <a class="nav-link linkCard" href="https://blancogrillresturant.netlify.app" target="_blank">
-                                <i class="fa-solid fa-utensils"></i>
-                            </a>
-                        </div>
-                        
-                        <!-- Seconda card -->
-                        <div class="card">
-                            <h2>Blanco Grill</h2>
-                            <img src="./img/screen_Blanco.png" class="imgBlanco" alt="">
-                            <p>Blanco Grill è un sito web realizzato per un ristorante, progettato per essere moderno, responsive e facilmente navigabile. Il design è pulito, con immagini di alta qualità per mostrare l'atmosfera e i piatti del ristorante. La mia attenzione è stata rivolta alla facilità d'uso, ottimizzando l'esperienza utente su dispositivi desktop e mobile.</p>
-                            <a class="nav-link linkCard" href="https://blancogrillresturant.netlify.app" target="_blank">
-                                <i class="fa-solid fa-utensils"></i>
-                            </a>
-                        </div>
-                        
-                        <!-- Terza card -->
-                        <div class="card">
-                            <h2>Blanco Grill</h2>
-                            <img src="./img/screen_Blanco.png" class="imgBlanco" alt="">
-                            <p>Blanco Grill è un sito web realizzato per un ristorante, progettato per essere moderno, responsive e facilmente navigabile. Il design è pulito, con immagini di alta qualità per mostrare l'atmosfera e i piatti del ristorante. La mia attenzione è stata rivolta alla facilità d'uso, ottimizzando l'esperienza utente su dispositivi desktop e mobile.</p>
-                            <a class="nav-link linkCard" href="https://blancogrillresturant.netlify.app" target="_blank">
-                                <i class="fa-solid fa-utensils"></i>
-                            </a>
-                        </div>
-                        
-                    </div>
-                </div>
-                
+   
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="portfolio-card">
+              <h2>Blanco Grill</h2>
+              <img src="./img/screen_Blanco.png" class="img_progg" alt="">
+              <a class="nav-link linkCard" href="https://blancogrillresturant.netlify.app" target="_blank">Vedi Sito-Web
+                <i class="fa-solid icon fa-utensils ms-1 mt-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>     
+      </div>
+      
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="portfolio-card">
+              <h2>Blanco Grill</h2>
+              <img src="./img/screen_Blanco.png" class="img_progg" alt="">
+              <a class="nav-link linkCard" href="https://blancogrillresturant.netlify.app" target="_blank">Vedi Sito-Web
+                <i class="fa-solid icon fa-utensils ms-1 mt-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>     
+      </div>
+      
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="portfolio-card">
+              <h2>Blanco Grill</h2>
+              <img src="./img/screen_Blanco.png" class="img_progg" alt="">
+              <a class="nav-link linkCard" href="https://blancogrillresturant.netlify.app" target="_blank">Vedi Sito-Web
+                <i class="fa-solid icon fa-utensils ms-1 mt-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>     
+      </div>
+      
+                 
                 
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
                 <script src="scroll.js"></script> <!-- Questo file contiene il codice JS per l'effetto hover sull'immagine -->
